@@ -1,0 +1,54 @@
+** What is TypeScript?
+=> TypeScript is a superset of of Javascript that adds static typing and other features to enhance JavaScript development. It was developed by Microsoft on Oct 1, 2012, and is now an open source project with a large community of contributors.
+
+** Typescript is a superset of javascript, which means any valid Javascript code is also valid TypeScript code.
+
+** DataTypes in TypeScript
+=> 
+Built-in Data Type    - Keyword      - Description
+String                - string       - It is used to represent a sequence of characters
+Number                - number       - It is used to represent both Integer as well as Floating-Point numbers
+Boolean               - boolean      - Represents true and false
+Void                  - void         - Generally used on function return-types
+Null                  - null         - It is used when an object does not have any value
+Undefined             - undefined    - Denotes value given to uninitialized variable
+Any                   - any          - If variable is declared with any data-type then any type of value can be assigned to that variable
+Array                 - array        - An array is a user-defined data type. An array is a homogeneous collection of similar types of elements that have a contiguous memory location and which can store multiple values of different data types.
+
+Examples:
+let b: number = 123;
+let c: number = 123.456;
+let d: string = ‘Geeks’;
+let e: undefined = undefined;
+let f: boolean = true;
+let g: number = 0b111001; // Binary
+let h: number = 0o436; // Octal
+let i: number = 0xadf0d; // Hexa-Decimal
+let a: any = null;
+let b: any =123;
+let c: any = 123.456;
+let d: any = ‘Geeks’;
+let e: any = undefined;
+let f: any = true;
+const names: string[] = [];
+
+Tuple      => A tuple is a typed array with a pre-defined length and types for each index. Tuples are great because they allow each element in the array to be a known type of value.
+Example: 
+// define our tuple
+let ourTuple: [number, boolean, string];
+
+// initialize correctly
+ourTuple = [5, false, 'Coding God was here'];
+
+** Type Inference
+=> In TypeScript, it is not necessary to annotate type always. The TypeScript compiler infers the type information when there is no explicit information available in the form of type annotation.
+
+** Union
+=> In TypeScript, we can define a variable which can have multiple types of values. In other words, TypeScript can combine one or two different types of data (i.e., number, string, etc.) in a single type, which is called a union type. Union types are a powerful way to express a variable with multiple types. Two or more data types can be combined by using the pipe ('|') symbol between the types.
+
+** Type Annotation
+=> In TypeScript, type annotation is a way of explicitly specifying the type of variable,
+function parameter, or function return value.
+Type annotations are expressed by using a colon (:) followed by the desired type after the variable
+or function parameter declaration. There can be a space after the colon.
+Ex. let myNumber: number = 10;
